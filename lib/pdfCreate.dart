@@ -17,7 +17,7 @@ pdfOlustur(List tablo, List maddeler, String paragraf, String baslik) async {
   //pdf sayfamızı ekliyoruz
   pdf.addPage(MultiPage(
       //sayfa için font ayarları
-      theme: Theme.withFont(
+      theme: ThemeData.withFont(
         base: Font.ttf(
             await rootBundle.load("assets/fonts/OpenSans-Regular.ttf")),
         bold: Font.ttf(
